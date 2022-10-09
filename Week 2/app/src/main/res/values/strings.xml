@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Umc_2nd_mission</string>
+    <string name="textListenNow">지금 듣기</string>
+    <string name="textRecentListen">최근 재생한 음악</string>
+    <string name="textOtherMusic">아이유의 다른 콘텐츠</string>
+    <string name="textRecommend">추천 플레이리스트</string>
+    <string name="textSearch">검색</string>
+    <string name="textCategory">카테고리 둘러보기</string>
+</resources>

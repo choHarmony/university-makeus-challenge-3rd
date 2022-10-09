@@ -1,0 +1,2 @@
+rootProject.name = "Umc_2nd_mission"
+include ':app'

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        tools:context=".SearchActivity" >
+
+        <TextView
+            android:id="@+id/textSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="@string/textSearch"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"/>
+
+        <EditText
+            android:id="@+id/barSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="아티스트, 노래, 가사 등"
+            android:textColorHint="#808080"
+            android:textSize="18sp"
+            android:background="@drawable/rounding_bg"
+            android:drawableStart="@drawable/searchicon"
+            android:drawablePadding="5dp" />
+
+        <View
+            android:id="@+id/divideLine"
+            android:layout_width="380dp"
+            android:layout_height="1dp"
+            android:background="#323232"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/textCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textCategory"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="5"
+            android:layout_gravity="fill_horizontal"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:useDefaultMargins="true">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/zico_cover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="지코 (ZICO)"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/ive_afterlike_cover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IVE (아이브)"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/blackpink_cover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BLACKPINK"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/newjeans_albumcover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NewJeans"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/crush_cover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crush"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/iu_cover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이유"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/taeyeon_cover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="태연 (TAEYEON)"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/day6_cover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DAY6 (데이식스)"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/ohmygirl_cover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="오마이걸 (OH MY GIRL)"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/ggeneration_cover"
+                        android:scaleType="centerCrop"
+                        android:tint="#80000000"
+                        android:tintMode="src_atop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="소녀시대"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

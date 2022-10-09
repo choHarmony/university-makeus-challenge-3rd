@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/textListenNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textListenNow"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/btnMyPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:padding="0sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mypage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight="50dp"
+                app:layout_constraintWidth="50dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/divideLine"
+            android:layout_width="380dp"
+            android:layout_height="1dp"
+            android:background="#323232"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/textRecentListen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textRecentListen"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginTop="10dp"
+            android:useDefaultMargins="true"
+            android:layout_marginStart="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/newjeans_albumcover" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hype Boy"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NewJeans"
+                    android:textColor="#808080"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/eleven_cover" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ELEVEN"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IVE (아이브)"
+                    android:textColor="#808080"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/lovedive_cover" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOVE DIVE"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IVE (아이브)"
+                    android:textColor="#808080"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/iu_lovepoem" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blueming"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이유"
+                    android:textColor="#808080"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+
+
+
+        </GridLayout>
+
+        <View
+            android:id="@+id/divideLine2"
+            android:layout_width="380dp"
+            android:layout_height="1dp"
+            android:background="#323232"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/textOtherMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textOtherMusic"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp" >
+
+                        <ImageView
+                            android:id="@+id/iucover1"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/iu_palette" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이 지금"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이유"
+                        android:textColor="#808080"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp" >
+
+                        <ImageView
+                            android:id="@+id/iucover2"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/iu_strawberrymoon" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="strawberry moon"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이유"
+                        android:textColor="#808080"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp" >
+
+                        <ImageView
+                            android:id="@+id/iucover3"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:src="@drawable/iu_lovepoem" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blueming"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이유"
+                        android:textColor="#808080"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/divideLine3"
+            android:layout_width="380dp"
+            android:layout_height="1dp"
+            android:background="#323232"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/textRecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textRecommend"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/tycover"
+                android:layout_width="380dp"
+                android:layout_height="380dp"
+                android:src="@drawable/ty_myvoice"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple Music 에디터가 엄선해 수시로\n업데이트하는 K-Pop 인기곡."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="10dp"/>
+
+
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
