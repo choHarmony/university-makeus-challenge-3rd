@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/textFragment"
+        android:icon="@drawable/navi_text_icon"
+        android:title="Text Memo" />
+
+    <item
+        android:id="@+id/paintFragment"
+        android:icon="@drawable/navi_draw_icon"
+        android:title="Paint Memo" />
+
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/navi_setting_icon"
+        android:title="Setting" />
+
+</menu>
