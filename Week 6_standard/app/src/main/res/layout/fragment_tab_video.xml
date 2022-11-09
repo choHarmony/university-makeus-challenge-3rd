@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TabVideoFragment"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/black" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/school"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/school"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/schoolTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동물 친구들 학교 지어주기"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/school"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/schoolInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 1.2만회 | 3주 전"
+                    android:textColor="#808080"
+                    app:layout_constraintTop_toBottomOf="@+id/schoolTitle"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/school"
+                    android:layout_marginStart="10dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/peter"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/peter" />
+
+                <TextView
+                    android:id="@+id/peterTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="피터"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/peter"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/peterInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 1.2만회 | 3주 전"
+                    android:textColor="#808080"
+                    app:layout_constraintTop_toBottomOf="@+id/peterTitle"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/peter"
+                    android:layout_marginStart="10dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/vanila"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/vanila_secret" />
+
+                <TextView
+                    android:id="@+id/vanilaTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="바닐라"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vanila"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/vanilaInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 1.2만회 | 3주 전"
+                    android:textColor="#808080"
+                    app:layout_constraintTop_toBottomOf="@+id/vanilaTitle"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/vanila"
+                    android:layout_marginStart="10dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/school2"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/school" />
+
+                <TextView
+                    android:id="@+id/schoolTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동물 친구들 학교 지어주기"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/school2"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/schoolInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 1.2만회 | 3주 전"
+                    android:textColor="#808080"
+                    app:layout_constraintTop_toBottomOf="@+id/schoolTitle2"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/school2"
+                    android:layout_marginStart="10dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/peter2"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/peter" />
+
+                <TextView
+                    android:id="@+id/peterTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="피터"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/peter2"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/peterInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 1.2만회 | 3주 전"
+                    android:textColor="#808080"
+                    app:layout_constraintTop_toBottomOf="@+id/peterTitle2"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/peter2"
+                    android:layout_marginStart="10dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/vanila2"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/vanila_secret" />
+
+                <TextView
+                    android:id="@+id/vanilaTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="바닐라"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vanila2"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/vanilaInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 1.2만회 | 3주 전"
+                    android:textColor="#808080"
+                    app:layout_constraintTop_toBottomOf="@+id/vanilaTitle2"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/vanila2"
+                    android:layout_marginStart="10dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/school3"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/school" />
+
+                <TextView
+                    android:id="@+id/schoolTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동물 친구들 학교 지어주기"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/school3"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/schoolInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 1.2만회 | 3주 전"
+                    android:textColor="#808080"
+                    app:layout_constraintTop_toBottomOf="@+id/schoolTitle3"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/school3"
+                    android:layout_marginStart="10dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/peter3"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/peter" />
+
+                <TextView
+                    android:id="@+id/peterTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="피터"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/peter3"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/peterInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 1.2만회 | 3주 전"
+                    android:textColor="#808080"
+                    app:layout_constraintTop_toBottomOf="@+id/peterTitle3"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/peter3"
+                    android:layout_marginStart="10dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/vanila3"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/vanila_secret" />
+
+                <TextView
+                    android:id="@+id/vanilaTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="바닐라"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vanila3"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/vanilaInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 1.2만회 | 3주 전"
+                    android:textColor="#808080"
+                    app:layout_constraintTop_toBottomOf="@+id/vanilaTitle3"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/vanila3"
+                    android:layout_marginStart="10dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
